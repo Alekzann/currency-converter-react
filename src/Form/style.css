@@ -1,0 +1,35 @@
+.form {
+    max-width: 500px;
+    padding: 10px 20px;
+    margin: 20px auto;
+}
+
+.form__fieldset {
+    max-width: 90%;
+    margin: 20px auto;
+    color: #455b65;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 17px -3px #394660;
+}
+
+.form__legend {
+    color: #455b65;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 25px;
+    box-shadow: 0px 0px 17px -3px #394660;
+}
+
+.form__listHeader {
+    display: inline-block;
+    max-width: 300px;
+    margin: 10px;
+    padding-left: 30px;
+}
+
+
+

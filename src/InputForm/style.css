@@ -1,0 +1,7 @@
+.form__amount {
+    max-width: 100px;
+    background-color: rgb(229, 248, 251);
+    color: #455b65;
+    border: 1px dotted #455b65;
+    border-radius: 10px 5px;
+}
