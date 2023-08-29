@@ -1,7 +1,7 @@
 import "./style.css"
 
-const Form = ({titleInput, titleSelect, input, select, button, result}) => (
-    <form className="form ">
+const Form = ({titleInput, titleSelect, input, select, button, result, onFormSubmit}) => (
+    <form className="form " onSubmit={onFormSubmit}>
         <fieldset className="form__fieldset">
             <legend className="form__legend">Kantor walut</legend>
             <div>
