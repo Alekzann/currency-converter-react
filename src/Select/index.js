@@ -1,12 +1,20 @@
+import { useState } from 'react';
 
-const Select = () => (
-    <select>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="CZK">CZK</option>
-        <option value="UAH">UAH</option>
-        <option value="RUB">RUB</option>
-    </select>
-)
+
+
+const Select = ({currencies, onSelectChange}) => {
+	
+	
+	return (
+		<select value={currencies} onChange={onSelectChange}>
+				{currencies.map(currency => (
+					<option key={currency.id}>
+						{currency.name}
+					</option>
+				))
+				}
+		</select>
+	)
+}
 
 export default Select;
