@@ -5,7 +5,7 @@ const Form = ({ input, select, result, onFormSubmit }) => (
 		<fieldset className="form__fieldset">
 			<legend className="form__legend">Kantor walut</legend>
 			<div className="form__container">
-				<span className="form__listHeader">"Kwota w PLN*"</span>
+				<span className="form__listHeader">Kwota w PLN*</span>
 				{input}
 			</div>
 			<div className="form__container">
