@@ -1,7 +1,5 @@
 import InputForm from "./InputForm";
 import Select from "./Select";
-import Button from "./Button";
-import Result from "./Result";
 import Form from "./Form";
 import Container from "./Container";
 import { currencies } from './currencies.js';
@@ -18,7 +16,7 @@ function App() {
 
     setResult({
       sourceAmount: +amount,
-      sourceResult: amount/rate,
+      sourceResult: amount / rate,
       currency,
     })
   }
@@ -32,8 +30,6 @@ function App() {
     <Container>
       <Form
         onFormSubmit={onFormSubmit}
-        titleInput="Kwota w PLN*"
-        titleSelect="Waluta:"
         input={
           <InputForm
             amount={amount}
@@ -44,13 +40,7 @@ function App() {
             currency={currency}
             setCurrency={setCurrency}
           />}
-        button={
-          <Button
-          />}
-        result={
-          <Result
-          result={result}
-          />}
+        result={result}
       />
     </Container>
   );
