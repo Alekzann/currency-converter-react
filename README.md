@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# DEMO
+https://alekzann.github.io/currency-converter-react/
+
+## Technologies used:
+- HTML
+- CSS
+- JavaScript
+- BEM
+- Grid
+- React
+- Flex
+
+## This is my currency-converter with interactions !!!
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
