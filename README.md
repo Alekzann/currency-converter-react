@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # DEMO
-https://alekzann.github.io/currency-converter-react/
+### [Click here to see more](https://alekzann.github.io/currency-converter-react/)
 
 ## Technologies used:
 - HTML
@@ -14,9 +14,9 @@ https://alekzann.github.io/currency-converter-react/
 - React
 - Flex
 
-## This is my currency-converter with interactions !!!
+## This is my currency-converter with interactions
 
-
+https://github.com/Alekzann/currency-converter-react/assets/134525143/a493f960-2ed3-4b82-82cc-595efac378e8
 
 ## Available Scripts
 
