@@ -36,6 +36,19 @@
 	margin: 15px;
 }
 
+.form__input {
+	max-width: 150px;
+	background-color: rgb(229, 248, 251);
+	color: #455b65;
+	border: 1px dotted #455b65;
+	border-radius: 5px;
+}
+
+.form__select {
+	border-radius: 4px;
+	background-color: rgb(229, 248, 251);
+}
+
 .form__button {
 	width: 200px;
 	padding: 5px;
@@ -69,6 +82,9 @@
 
 	.form__result {
 		margin: 0;
+	}
+	.form__input {
+		margin: 0 auto;
 	}
 }
 
