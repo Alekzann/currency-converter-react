@@ -1,5 +1,3 @@
-import InputForm from "./InputForm";
-import Select from "./Select";
 import Form from "./Form";
 import Container from "./Container";
 import { currencies } from './currencies.js';
@@ -30,18 +28,13 @@ function App() {
     <Container>
       <Form
         onFormSubmit={onFormSubmit}
-        input={
-          <InputForm
-            amount={amount}
-            setAmount={setAmount}
-          />}
-        select={
-          <Select
-            currency={currency}
-            setCurrency={setCurrency}
-          />}
+        amount={amount}
+        setAmount={setAmount}
+        currency={currency}
+        setCurrency={setCurrency}
         result={result}
       />
+      
     </Container>
   );
 }
