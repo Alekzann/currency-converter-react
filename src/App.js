@@ -34,7 +34,6 @@ function App() {
         setCurrency={setCurrency}
         result={result}
       />
-      
     </Container>
   );
 }
