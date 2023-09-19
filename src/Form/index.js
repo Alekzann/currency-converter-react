@@ -1,11 +1,13 @@
 import "./style.css";
 import { currencies } from '../currencies.js';
+import CurrentDate from "./CurrentDate";
 
 const Form = ({ amount, setAmount, currency, setCurrency, result, onFormSubmit }) => (
   <form className="form" onSubmit={onFormSubmit}>
     <fieldset className="form__fieldset">
-      <legend className="form__legend">Kantor walut</legend>
+      <legend className="form__legend">Przelicznik walut</legend>
       <div className="form__container">
+        <CurrentDate />
         <span className="form__listHeader">Kwota w PLN*</span>
         <input
           className="form__input"
@@ -37,12 +39,14 @@ const Form = ({ amount, setAmount, currency, setCurrency, result, onFormSubmit }
           }
         </select>
       </div>
-      <p>
-        <button className="form__button">
-          Przelicz
-        </button>
-      </p>
-      <div >
+      <div className="form__buttonContainer">
+        <p>
+          <button className="form__button">
+            Przelicz
+          </button>
+        </p>
+      </div>
+      <div className="form__result">
         <p>
           {result !== undefined && (
             <>
