@@ -8,7 +8,7 @@ function App() {
   const [currency, setCurrency] = useState(currencies[0].id);
   const [amount, setAmount] = useState("");
   const [result, setResult] = useState();
-
+    
   const calculateResult = (amount, currency) => {
     const rate = currencies.find(({ id }) => id === currency).rate;
 

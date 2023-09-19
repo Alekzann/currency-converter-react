@@ -1,0 +1,6 @@
+.date {
+  display: grid;
+  justify-content: right;
+  font-size: 10px;
+  font-family: 'Roboto Mono', monospace;
+}
