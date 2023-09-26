@@ -3,7 +3,6 @@ import Container from "./Container";
 import { currencies } from './currencies.js';
 import { useState } from 'react';
 
-
 function App() {
   const [currency, setCurrency] = useState(currencies[0].id);
   const [amount, setAmount] = useState("");

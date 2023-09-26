@@ -8,7 +8,7 @@ const Form = ({ amount, setAmount, currency, setCurrency, result, onFormSubmit }
       <legend className="form__legend">Przelicznik walut</legend>
       <div className="form__container">
         <CurrentDate />
-        <span className="form__listHeader">Kwota w PLN*</span>
+        <span className="form__listHeader">Kwota w PLN*:</span>
         <input
           className="form__input"
           name="amount"

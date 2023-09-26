@@ -1,7 +1,6 @@
 import "./style.css";
 import { useState, useEffect } from 'react';
 
-
 const CurrentDate = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
@@ -33,7 +32,5 @@ const CurrentDate = () => {
     </div>
   );
 };
-
-
 
 export default CurrentDate;
