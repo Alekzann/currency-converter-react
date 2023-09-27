@@ -1,4 +1,4 @@
-import "./style.css";
+import {DateStyle} from "./styled.js";
 import { useState, useEffect } from 'react';
 
 const CurrentDate = () => {
@@ -27,9 +27,9 @@ const CurrentDate = () => {
   const formattedDate = currentDate.toLocaleDateString("pl", options);
 
   return (
-    <div className="date" >
+    <DateStyle>
       <p>{`Dziś jest: ${formattedDate}`}</p>
-    </div>
+    </DateStyle>
   );
 };
 
