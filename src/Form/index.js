@@ -1,16 +1,15 @@
-import "./style.css";
+import {FormStyle, Result, Button, Select, ButtonContainer, Input, ListHeader, Fieldset, Legend, FormContainer} from "./styled.js"
 import { currencies } from '../currencies.js';
 import CurrentDate from "./CurrentDate";
 
 const Form = ({ amount, setAmount, currency, setCurrency, result, onFormSubmit }) => (
-  <form className="form" onSubmit={onFormSubmit}>
-    <fieldset className="form__fieldset">
-      <legend className="form__legend">Przelicznik walut</legend>
-      <div className="form__container">
+  <FormStyle onSubmit={onFormSubmit}>
+    <Fieldset>
+      <Legend>Przelicznik walut</Legend>
+      <FormContainer>
         <CurrentDate />
-        <span className="form__listHeader">Kwota w PLN*:</span>
-        <input
-          className="form__input"
+        <ListHeader>Kwota w PLN*:</ListHeader>
+        <Input
           name="amount"
           type="number"
           min="1"
@@ -21,10 +20,10 @@ const Form = ({ amount, setAmount, currency, setCurrency, result, onFormSubmit }
           placeholder="Ilość w PLN"
           onChange={({ target }) => setAmount(target.value)}
         />
-      </div>
-      <div className="form__container">
-        <span className="form__listHeader">Waluta:</span>
-        <select
+      </FormContainer>
+      <FormContainer>
+        <ListHeader>Waluta:</ListHeader>
+        <Select
           className="form__select"
           value={currency}
           onChange={({ target }) => setCurrency(target.value)}
@@ -37,16 +36,16 @@ const Form = ({ amount, setAmount, currency, setCurrency, result, onFormSubmit }
             </option>
           ))
           }
-        </select>
-      </div>
-      <div className="form__buttonContainer">
+        </Select>
+      </FormContainer>
+      <ButtonContainer>
         <p>
-          <button className="form__button">
+          <Button>
             Przelicz
-          </button>
+          </Button>
         </p>
-      </div>
-      <div className="form__result">
+      </ButtonContainer>
+      <Result>
         <p>
           {result !== undefined && (
             <>
@@ -57,9 +56,9 @@ const Form = ({ amount, setAmount, currency, setCurrency, result, onFormSubmit }
             </>
           )}
         </p>
-      </div>
-    </fieldset>
-  </form>
+      </Result>
+    </Fieldset>
+  </FormStyle>
 )
 
 

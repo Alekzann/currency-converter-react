@@ -6,7 +6,6 @@ export const ContainerStyle = styled.div`
 	max-width: 1000px;
 	font-size: 25px;
 
-
   @media(max-width: 560px){
 		min-height: 550px;
   };
