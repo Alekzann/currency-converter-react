@@ -12,7 +12,7 @@ const CurrentDate = () => {
     hour: "numeric",
     minute: "numeric",
     second: "numeric"
-  }
+  };
 
   useEffect(() => {
     const intervalID = setInterval(() => {
