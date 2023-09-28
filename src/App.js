@@ -1,13 +1,13 @@
 import Form from "./Form";
-import Container from "./Container";
-import { currencies } from './currencies.js';
-import { useState } from 'react';
+import Container from "./Container/styled.js";
+import { currencies } from "./currencies.js";
+import { useState } from "react";
 
 function App() {
   const [currency, setCurrency] = useState(currencies[0].id);
   const [amount, setAmount] = useState("");
   const [result, setResult] = useState();
-    
+
   const calculateResult = (amount, currency) => {
     const rate = currencies.find(({ id }) => id === currency).rate;
 
@@ -15,8 +15,8 @@ function App() {
       sourceAmount: +amount,
       sourceResult: amount / rate,
       currency,
-    })
-  }
+    });
+  };
 
   const onFormSubmit = (e) => {
     e.preventDefault();
