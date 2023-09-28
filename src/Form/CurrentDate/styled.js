@@ -5,5 +5,5 @@ export const DateStyle = styled.div`
   display: grid;
   justify-content: right;
   font-size: 15px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 `;

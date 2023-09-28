@@ -9,10 +9,10 @@ export const StyleForm = styled.form`
   margin: 50px auto;
   padding-top: 100px;
 
-  @media(max-width: 400px) {
+  @media (max-width: 400px) {
     margin: 0;
     padding-top: 50px;
-  };
+  }
 `;
 
 export const Fieldset = styled.fieldset`
@@ -39,9 +39,9 @@ export const Legend = styled.legend`
 export const FormContainer = styled.div`
   padding: 10px;
 
-  @media(max-width: 560px) {
+  @media (max-width: 560px) {
     display: grid;
-  };
+  }
 `;
 
 export const ListHeader = styled.span`
@@ -49,9 +49,9 @@ export const ListHeader = styled.span`
   margin: 15px;
   padding: 10px;
 
-  @media(max-width: 560px) {
+  @media (max-width: 560px) {
     margin: 0 auto;
-  };
+  }
 `;
 
 export const Input = styled.input`
@@ -60,10 +60,10 @@ export const Input = styled.input`
   color: ${({ theme }) => theme.primaryTextcolor};
   border: 1px dotted #455b65;
   border-radius: 5px;
-  
-  @media(max-width: 560px) {
+
+  @media (max-width: 560px) {
     margin: 0 auto;
-  };
+  }
 `;
 
 export const Select = styled.select`
@@ -72,9 +72,9 @@ export const Select = styled.select`
   text-align: center;
   color: ${({ theme }) => theme.primaryTextcolor};
 
-  @media(max-width: 560px) {
+  @media (max-width: 560px) {
     text-align: center;
-  };
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -96,18 +96,18 @@ export const Button = styled.button`
     background-color: rgb(40, 190, 209);
     box-shadow: 2px 2px 22px 1px rgba(40, 189, 209, 0.082);
     transition: 0.3s;
-  };
+  }
 
   &:active {
-    background-color: rgb(36, 175, 209)
-  };
+    background-color: rgb(36, 175, 209);
+  }
 `;
 
 export const Result = styled.div`
   display: flex;
   justify-content: center;
 
-  @media(max-width: 560px) {
+  @media (max-width: 560px) {
     margin: 0;
-  };
+  }
 `;
