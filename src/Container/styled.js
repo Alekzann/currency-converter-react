@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerStyle = styled.div`
+const Container = styled.div`
   margin: 0 auto;
 	min-height: 600px;
 	max-width: 1000px;
@@ -10,3 +10,5 @@ export const ContainerStyle = styled.div`
 		min-height: 550px;
   };
 `;
+
+export default Container;
