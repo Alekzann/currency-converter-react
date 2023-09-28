@@ -1,5 +1,5 @@
 import { DateStyle } from "./styled.js";
-import {useCurrentDate} from "./useCurrentDate.js"
+import {useCurrentDate} from "./useCurrentDate.js";
 
 const formattedDate = (currentDate) => currentDate.toLocaleDateString("pl", options);
 
