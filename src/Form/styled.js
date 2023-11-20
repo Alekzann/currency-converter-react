@@ -23,7 +23,7 @@ export const Fieldset = styled.fieldset`
   background-color: whitesmoke;
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 17px -3px #394660;
+  box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
 `;
 
 export const Legend = styled.legend`
@@ -33,7 +33,7 @@ export const Legend = styled.legend`
   border-radius: 10px;
   font-size: 30px;
   margin: 0 auto;
-  box-shadow: 0px 0px 17px -3px #394660;
+  box-shadow: 0px 0px 17px -3px rgb(36, 209, 209);
 `;
 
 export const FormContainer = styled.div`
@@ -60,6 +60,7 @@ export const Input = styled.input`
   color: ${({ theme }) => theme.primaryTextcolor};
   border: 1px dotted #455b65;
   border-radius: 5px;
+  box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
 
   @media (max-width: 560px) {
     margin: 0 auto;
@@ -71,6 +72,7 @@ export const Select = styled.select`
   background-color: ${({ theme }) => theme.primaryColor};
   text-align: center;
   color: ${({ theme }) => theme.primaryTextcolor};
+  box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
 
   @media (max-width: 560px) {
     text-align: center;
@@ -89,12 +91,12 @@ export const Button = styled.button`
   background-color: rgb(36, 209, 209);
   border: none;
   border-radius: 5px;
-  box-shadow: 2px 2px 4px -3px #394660;
+  box-shadow: 0px 1px 10px 0px rgb(36, 209, 209);;
   font-weight: 700;
 
   &:hover {
     background-color: rgb(40, 190, 209);
-    box-shadow: 2px 2px 22px 1px rgba(40, 189, 209, 0.082);
+    box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);;
     transition: 0.3s;
   }
 
@@ -103,11 +105,4 @@ export const Button = styled.button`
   }
 `;
 
-export const Result = styled.div`
-  display: flex;
-  justify-content: center;
 
-  @media (max-width: 560px) {
-    margin: 0;
-  }
-`;
