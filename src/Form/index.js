@@ -1,7 +1,6 @@
 import {
   StyleForm,
   theme,
-  Result,
   Button,
   Select,
   ButtonContainer,
@@ -13,6 +12,7 @@ import {
 } from "./styled.js";
 import { currencies } from "../currencies.js";
 import CurrentDate from "./CurrentDate";
+import {Result} from "./Result";
 import { ThemeProvider } from "styled-components";
 
 const Form = ({
@@ -60,20 +60,7 @@ const Form = ({
             <Button>Przelicz</Button>
           </p>
         </ButtonContainer>
-        <Result>
-          <p>
-            {result !== undefined && (
-              <>
-                {result.sourceAmount} {"PLN"}
-                <strong>
-                  {" "}
-                  {"= "}
-                  {result.sourceResult.toFixed(2)} {result.currency}
-                </strong>
-              </>
-            )}
-          </p>
-        </Result>
+        <Result result={result} />
       </Fieldset>
     </StyleForm>
   </ThemeProvider>
