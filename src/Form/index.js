@@ -14,6 +14,7 @@ import { currencies } from "../currencies.js";
 import CurrentDate from "./CurrentDate";
 import {Result} from "./Result";
 import { ThemeProvider } from "styled-components";
+import {useCurrencyData} from "./useCurrencyData.js";
 
 const Form = ({
   amount,
