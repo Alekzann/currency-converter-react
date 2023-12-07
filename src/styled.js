@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import background from "./cash.jpg";
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 html {
   box-sizing: border-box;
 };
@@ -21,4 +21,9 @@ body {
 };
 `;
 
-export default GlobalStyle;
+export const theme = {
+  colors: {
+    primaryColor: "#e5f8fb",
+    primaryTextcolor: "#455b65",
+  },
+};
