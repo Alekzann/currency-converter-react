@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const theme = {
-  primaryColor: "#e5f8fb",
-  primaryTextcolor: "#455b65",
-};
-
 export const StyleForm = styled.form`
   margin: 50px auto;
   padding-top: 100px;
@@ -35,6 +30,21 @@ export const Legend = styled.legend`
   margin: 0 auto;
   box-shadow: 0px 0px 17px -3px rgb(36, 209, 209);
 `;
+
+export const Loading = styled.div`
+text-align: center;
+margin: 25px 0; 
+`;
+export const Error = styled.div`
+text-align: center;
+margin: 25px 0;
+/* display: inline-block;
+align-content: center; */
+/* display: block;
+align-items: center; */
+/* display: flex;
+justify-content: center; */
+`
 
 export const FormContainer = styled.div`
   padding: 10px;
