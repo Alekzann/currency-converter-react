@@ -6,29 +6,28 @@ import axios from "axios";
 export const useCurrencyData = () => {
   const [currencyData, setCurrencyData] = useState({
     status: "loading",
+    ratesData: [],
   });
 
   useEffect(() => {
     setTimeout(() => {
       (async () => {
         try {
-          const response = await axios.get("currencies.json");
+          const response = await axios.get("/currencies.json");
+          // console.log(response.data);
 
           setCurrencyData({
             status: "success",
-            data: response.data,
-            currencies: response.data.rates,
-            apiDate: response.data.time_last_update_utc,
+            ratesData: response.data.data,
           });
         } catch {
           setCurrencyData({
             status: "error",
-            data: null,
           });
         }
       })();
-    }, 2000);
+    }, 1500);
   });
 
-return {currencyData};
+  return { currencyData };
 };
