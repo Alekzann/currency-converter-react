@@ -2,13 +2,13 @@ import {
   StyleForm,
   Button,
   Input,
-  Select,
   Loading,
   Error,
   ButtonContainer,
   ListHeader,
   Fieldset,
   Legend,
+  Note,
   FormContainer,
 } from "./styled";
 // import { currencies } from "./currencies";
@@ -44,7 +44,6 @@ export const Form = () => {
     <StyleForm onSubmit={onFormSubmit}>
       <Fieldset>
         <Legend>Przelicznik walut</Legend>
-
         <CurrentDate />
         {currencyData.status === "loading" ? (
           <Loading>
@@ -53,8 +52,10 @@ export const Form = () => {
           </Loading>
         ) : currencyData.status === "error" ? (
           <Error>
-            Przykro nam, coś poszło nie tak, <br /> nasze developerzy już
-            pracują nad tym... <br /> Spróbuj póżniej🥲
+            Przykro nam, coś poszło nie tak, <br /> Sprawdź, czy masz połaczenie
+            z internetem.
+            <br /> Jeśli masz, to znaczy że nasze deweloperzy już pracują nad
+            rozwiązaniem problemu. <br /> Spróbuj póżniej🥲
           </Error>
         ) : (
           <>
@@ -74,7 +75,7 @@ export const Form = () => {
             </FormContainer>
             <FormContainer>
               <ListHeader>Waluta:</ListHeader>
-              <Select
+              <Input
                 as="select"
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
@@ -82,7 +83,7 @@ export const Form = () => {
                 {Object.keys(currencyData.ratesData).map((currency) => (
                   <option key={currency}>{currency}</option>
                 ))}
-              </Select>
+              </Input>
             </FormContainer>
           </>
         )}
@@ -92,6 +93,14 @@ export const Form = () => {
           </p>
         </ButtonContainer>
         <Result result={result} />
+        {currencyData.status === "success" ? (
+          <Note>
+            Kursy walut zostały pobrane ze strony <b>currency.api</b>, aktualne
+            na dzień {new Date(currencyData.date).toLocaleDateString()}
+          </Note>
+        ) : (
+          ""
+        )}
       </Fieldset>
     </StyleForm>
   );
