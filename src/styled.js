@@ -24,6 +24,7 @@ body {
 export const theme = {
   colors: {
     primaryColor: "#e5f8fb",
+    primaryColorHower: "#e5f8fb",
     primaryTextcolor: "#455b65",
   },
 };
