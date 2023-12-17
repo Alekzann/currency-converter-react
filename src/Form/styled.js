@@ -18,36 +18,36 @@ export const Fieldset = styled.fieldset`
   background-color: whitesmoke;
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
+  box-shadow: 0px 1px 15px 1px rgb(36, 209, 209);
 `;
 
 export const Legend = styled.legend`
   color: ${({ theme }) => theme.primaryTextcolor};
   background-color: whitesmoke;
-  padding: 5px;
+  padding: 5px 45px;
   border-radius: 10px;
   font-size: 30px;
   margin: 0 auto;
-  box-shadow: 0px 0px 17px -3px rgb(36, 209, 209);
+  box-shadow: 0px 1px 10px 0px rgb(36, 209, 209);
 `;
 
 export const Loading = styled.div`
-text-align: center;
-margin: 25px 0; 
+  text-align: center;
+  margin: 25px 0;
 `;
 export const Error = styled.div`
-text-align: center;
-margin: 25px 0;
-/* display: inline-block;
-align-content: center; */
-/* display: block;
-align-items: center; */
-/* display: flex;
-justify-content: center; */
-`
+  text-align: center;
+  text-decoration: underline grey;
+  margin: 25px 0;
+`;
 
 export const FormContainer = styled.div`
   padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-right: 15px;
 
   @media (max-width: 560px) {
     display: grid;
@@ -65,29 +65,37 @@ export const ListHeader = styled.span`
 `;
 
 export const Input = styled.input`
-  max-width: 200px;
+  width: 100%;
+  min-height: 35px;
+  text-align: center;
   background-color: ${({ theme }) => theme.primaryColor};
   color: ${({ theme }) => theme.primaryTextcolor};
   border: 1px dotted #455b65;
   border-radius: 5px;
-  box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
+  box-shadow: 0px 1px 10px 0px rgb(36, 209, 209);
 
   @media (max-width: 560px) {
     margin: 0 auto;
   }
-`;
 
-export const Select = styled.select`
-  border-radius: 5px;
-  background-color: ${({ theme }) => theme.primaryColor};
-  text-align: center;
-  color: ${({ theme }) => theme.primaryTextcolor};
-  box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
-
-  @media (max-width: 560px) {
-    text-align: center;
+  &:hover {
+    background-color: ${({ theme }) => theme.primaryColorHower};
+    box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
+    transition: 0.5s;
   }
 `;
+
+// export const Select = styled.select`
+//   border-radius: 5px;
+//   background-color: ${({ theme }) => theme.primaryColor};
+//   text-align: center;
+//   color: ${({ theme }) => theme.primaryTextcolor};
+//   box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
+
+//   @media (max-width: 560px) {
+//     text-align: center;
+//   }
+// `;
 
 export const ButtonContainer = styled.div`
   display: flex;
@@ -101,12 +109,12 @@ export const Button = styled.button`
   background-color: rgb(36, 209, 209);
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 1px 10px 0px rgb(36, 209, 209);;
+  box-shadow: 0px 1px 10px 0px rgb(36, 209, 209);
   font-weight: 700;
 
   &:hover {
     background-color: rgb(40, 190, 209);
-    box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);;
+    box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
     transition: 0.3s;
   }
 
@@ -115,4 +123,7 @@ export const Button = styled.button`
   }
 `;
 
-
+export const Note = styled.p`
+  text-align: center;
+  font-size: 15px;
+`;
