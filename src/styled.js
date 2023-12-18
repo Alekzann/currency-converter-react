@@ -18,13 +18,17 @@ body {
   background-image: url("${background}");
 	background-size: cover;
 	background-repeat: no-repeat;
+  margin-bottom: 50px;
 };
 `;
 
 export const theme = {
   colors: {
     primaryColor: "#e5f8fb",
-    primaryColorHower: "#e5f8fb",
-    primaryTextcolor: "#455b65",
+    primaryTextcolor: "#595858",
+    frameColor: "rgb(36, 209, 209)"
+  },
+  breakpoints: {
+    mobileMax: 560,
   },
 };
