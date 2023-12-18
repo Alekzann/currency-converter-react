@@ -13,6 +13,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Grid
 - React
 - Flex
+- Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & Style Loader)
+- Custom hooks
+- Styled components
+- Axios
+- Async/await
 
 ## This is my currency-converter with interactions
 
