@@ -3,7 +3,7 @@ import { StyleResult } from "./styled.js";
 export const Result = ({ result }) => (
   <StyleResult>
     <p>
-            {result !== undefined ? 
+      {result !== undefined ? (
         <>
           {result.sourceAmount} {"PLN"}
           <strong>
@@ -11,9 +11,9 @@ export const Result = ({ result }) => (
             {result.sourceResult.toFixed(2)} {result.currency}
           </strong>
         </>
-        :
+      ) : (
         `Podaj wartośći aby obliczyć.`
-      }
+      )}
     </p>
   </StyleResult>
 );

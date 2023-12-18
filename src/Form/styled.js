@@ -29,7 +29,7 @@ export const Legend = styled.legend`
   margin: 0 auto;
   box-shadow: 0px 1px 10px 0px ${({ theme }) => theme.colors.frameColor};
 
-  @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     padding: 4px 7px;
     font-size: 25px;
   }
@@ -50,7 +50,7 @@ export const FormContainer = styled.div`
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 1z0px;
   align-items: center;
   margin-right: 15px;
 
@@ -79,12 +79,11 @@ export const Input = styled.input`
   border-radius: 5px;
   box-shadow: 0px 1px 10px 0px ${({ theme }) => theme.colors.frameColor};
 
-  &::placeholder{
+  &::placeholder {
     color: ${({ theme }) => theme.colors.primaryTextcolor};
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px)  
-  {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     margin: 0 auto;
     font-size: 17px;
   }
@@ -97,8 +96,7 @@ export const Input = styled.input`
 `;
 
 export const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  text-align: center;
 `;
 
 export const Button = styled.button`
