@@ -1,4 +1,6 @@
-![ezgif com-speed](https://github.com/Alekzann/currency-converter-react/assets/134525143/fc994325-5ea2-470b-98d2-21ff050c722e)# Getting Started with Create React App
+![ezgif com-speed](https://github.com/Alekzann/currency-converter-react/assets/134525143/fc994325-5ea2-470b-98d2-21ff050c722e)
+
+# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
