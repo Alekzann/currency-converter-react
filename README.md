@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+![ezgif com-speed](https://github.com/Alekzann/currency-converter-react/assets/134525143/fc994325-5ea2-470b-98d2-21ff050c722e)# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -21,7 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## This is my currency-converter with interactions
 
-https://github.com/Alekzann/currency-converter-react/assets/134525143/a493f960-2ed3-4b82-82cc-595efac378e8
+![ezgif com-speed](https://github.com/Alekzann/currency-converter-react/assets/134525143/45e5e2d1-74a7-41d3-8821-a0cd12acb526)
 
 ## Available Scripts
 
