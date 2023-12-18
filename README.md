@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This website is a currency conversion tool that lets you calculate PLN currency to different currencies.
+(live exchange rates downloaded from currencyapi.com)
+You can use it at phone! We created mobile-friendli app.
+
 # DEMO
 ### [Click here to see more](https://alekzann.github.io/currency-converter-react/)
 
@@ -84,3 +88,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Author
+This project was created by Oleksandr Riaboshapka. Please feel free to contact me if you need any further information. My e-mail address(hadion@mail.ru).
+
+Thank you for visiting my website!
