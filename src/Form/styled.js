@@ -4,7 +4,7 @@ export const StyleForm = styled.form`
   margin: 50px auto;
   padding-top: 100px;
 
-  @media (max-width: 400px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     margin: 0;
     padding-top: 50px;
   }
@@ -14,21 +14,21 @@ export const Fieldset = styled.fieldset`
   margin: 0 auto;
   padding: 10px;
   max-width: 80%;
-  color: #455b65;
+  /* color: #455b65; */
   background-color: whitesmoke;
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 1px 15px 1px rgb(36, 209, 209);
+  box-shadow: 0px 1px 15px 1px ${({ theme }) => theme.colors.frameColor};
 `;
 
 export const Legend = styled.legend`
-  color: ${({ theme }) => theme.primaryTextcolor};
+  color: ${({ theme }) => theme.colors.primaryTextcolor};
   background-color: whitesmoke;
   padding: 5px 45px;
   border-radius: 10px;
   font-size: 30px;
   margin: 0 auto;
-  box-shadow: 0px 1px 10px 0px rgb(36, 209, 209);
+  box-shadow: 0px 1px 10px 0px ${({ theme }) => theme.colors.frameColor};
 `;
 
 export const Loading = styled.div`
@@ -49,17 +49,17 @@ export const FormContainer = styled.div`
   align-items: center;
   margin-right: 15px;
 
-  @media (max-width: 560px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     display: grid;
   }
 `;
 
 export const ListHeader = styled.span`
-  color: ${({ theme }) => theme.primaryTextcolor};
+  color: ${({ theme }) => theme.colors.primaryTextcolor};
   margin: 15px;
   padding: 10px;
 
-  @media (max-width: 560px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     margin: 0 auto;
   }
 `;
@@ -68,34 +68,28 @@ export const Input = styled.input`
   width: 100%;
   min-height: 35px;
   text-align: center;
-  background-color: ${({ theme }) => theme.primaryColor};
-  color: ${({ theme }) => theme.primaryTextcolor};
-  border: 1px dotted #455b65;
+  background-color: ${({ theme }) => theme.colors.primaryColor};
+  color: ${({ theme }) => theme.colors.primaryTextcolor};
+  border: none;
   border-radius: 5px;
-  box-shadow: 0px 1px 10px 0px rgb(36, 209, 209);
+  box-shadow: 0px 1px 10px 0px ${({ theme }) => theme.colors.frameColor};
 
-  @media (max-width: 560px) {
+  &::placeholder{
+    color: ${({ theme }) => theme.colors.primaryTextcolor};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px)  
+  {
     margin: 0 auto;
+    font-size: 17px;
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.primaryColorHower};
-    box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
+    background-color: ${({ theme }) => theme.colors.primaryColorHower};
+    box-shadow: 0px 1px 25px 2px ${({ theme }) => theme.colors.frameColor};
     transition: 0.5s;
   }
 `;
-
-// export const Select = styled.select`
-//   border-radius: 5px;
-//   background-color: ${({ theme }) => theme.primaryColor};
-//   text-align: center;
-//   color: ${({ theme }) => theme.primaryTextcolor};
-//   box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
-
-//   @media (max-width: 560px) {
-//     text-align: center;
-//   }
-// `;
 
 export const ButtonContainer = styled.div`
   display: flex;
@@ -105,16 +99,16 @@ export const ButtonContainer = styled.div`
 export const Button = styled.button`
   width: 200px;
   padding: 5px;
-  color: ${({ theme }) => theme.primaryTextcolor};
-  background-color: rgb(36, 209, 209);
+  color: ${({ theme }) => theme.colors.primaryTextcolor};
+  background-color: ${({ theme }) => theme.colors.frameColor};
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 1px 10px 0px rgb(36, 209, 209);
+  box-shadow: 0px 1px 10px 0px ${({ theme }) => theme.colors.frameColor};
   font-weight: 700;
 
   &:hover {
     background-color: rgb(40, 190, 209);
-    box-shadow: 0px 1px 25px 2px rgb(36, 209, 209);
+    box-shadow: 0px 1px 25px 2px ${({ theme }) => theme.colors.frameColor};
     transition: 0.3s;
   }
 
@@ -126,4 +120,5 @@ export const Button = styled.button`
 export const Note = styled.p`
   text-align: center;
   font-size: 15px;
+  color: ${({ theme }) => theme.colors.primaryTextcolor};
 `;
