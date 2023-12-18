@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyleForm = styled.form`
-  margin: 50px auto;
+  margin: 30px auto;
   padding-top: 100px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
