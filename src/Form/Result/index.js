@@ -12,7 +12,7 @@ export const Result = ({ result }) => (
           </strong>
         </>
         :
-        `Podaj wartośći aby móc obliczyć.`
+        `Podaj wartośći aby obliczyć.`
       }
     </p>
   </StyleResult>
