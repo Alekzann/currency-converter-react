@@ -11,10 +11,9 @@ import {
   Note,
   FormContainer,
 } from "./styled";
-// import { currencies } from "./currencies";
 import CurrentDate from "./CurrentDate";
 import { Result } from "./Result";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useCurrencyData } from "./useCurrencyData";
 
 export const Form = () => {
@@ -33,6 +32,12 @@ export const Form = () => {
       currency,
       rate,
     });
+  };
+
+  const inputRef = useRef();
+
+  const focusInput = () => {
+    inputRef.current.focus();
   };
 
   const onFormSubmit = (e) => {
@@ -60,12 +65,12 @@ export const Form = () => {
         ) : (
           <>
             <FormContainer>
-              <ListHeader>Kwota w PLN*:</ListHeader>
+              <ListHeader>Kwota w PLN:</ListHeader>
               <Input
+                ref={inputRef}
                 name="amount"
                 type="number"
                 min="1"
-                max="999999999"
                 value={amount}
                 step="any"
                 required
@@ -89,7 +94,7 @@ export const Form = () => {
         )}
         <ButtonContainer>
           <p>
-            <Button>Przelicz</Button>
+            <Button onClick={focusInput}>Przelicz</Button>
           </p>
         </ButtonContainer>
         <Result result={result} />
