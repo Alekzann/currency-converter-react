@@ -102,7 +102,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  width: 200px;
+  width: 400px;
   padding: 5px;
   color: ${({ theme }) => theme.colors.primaryTextcolor};
   background-color: ${({ theme }) => theme.colors.frameColor};
@@ -123,6 +123,7 @@ export const Button = styled.button`
 `;
 
 export const Note = styled.p`
+  margin-top: 20px;
   text-align: center;
   font-size: 15px;
   color: ${({ theme }) => theme.colors.primaryTextcolor};
