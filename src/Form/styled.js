@@ -41,6 +41,7 @@ export const Loading = styled.div`
 `;
 export const Error = styled.div`
   text-align: center;
+  color: ${({ theme }) => theme.colors.primaryTextcolor};
   text-decoration: underline grey;
   margin: 25px 0;
 `;
