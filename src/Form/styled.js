@@ -14,7 +14,6 @@ export const Fieldset = styled.fieldset`
   margin: 0 auto;
   padding: 10px;
   max-width: 80%;
-  /* color: #455b65; */
   background-color: whitesmoke;
   border: none;
   border-radius: 10px;
@@ -29,6 +28,11 @@ export const Legend = styled.legend`
   font-size: 30px;
   margin: 0 auto;
   box-shadow: 0px 1px 10px 0px ${({ theme }) => theme.colors.frameColor};
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    padding: 4px 7px;
+    font-size: 25px;
+  }
 `;
 
 export const Loading = styled.div`
